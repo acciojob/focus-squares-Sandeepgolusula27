@@ -1,5 +1,4 @@
-//your JS code here. If required.
-const squares = document.querySelectorAll(".focus-sq");
+const squares = document.querySelectorAll(".square");
 
 squares.forEach(square => {
   square.addEventListener("mouseenter", () => {
@@ -11,8 +10,10 @@ squares.forEach(square => {
   });
 
   square.addEventListener("mouseleave", () => {
-    squares.forEach(other => {
-      other.style.backgroundColor = "#E6E6FA"; // Lavender
+    squares.forEach(box => {
+      box.style.backgroundColor = "#E6E6FA"; // Lavender
     });
   });
 });
+`
+
